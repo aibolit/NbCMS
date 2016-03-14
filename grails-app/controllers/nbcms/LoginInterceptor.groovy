@@ -11,7 +11,7 @@ class LoginInterceptor {
         if (!session.user) {
             redirect controller: 'login'
             return false
-        }
+        } 
         return true
     }
 

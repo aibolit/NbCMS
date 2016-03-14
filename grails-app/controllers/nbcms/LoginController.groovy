@@ -8,6 +8,11 @@ class LoginController {
         session.user = null
         redirect(url: "/")
     }
+    
+    def magic = {
+        session.magic = true
+        redirect(url: "/")
+    }
 
     def tryLogin = {
         def user = User.findByEmail(params.email)

@@ -104,4 +104,11 @@ class AssignmentController {
             '*'{ render status: NOT_FOUND }
         }
     }
+    
+    @Transactional
+    def completeWriter(Assignment assignment) {
+        assignment.writerComplete = true
+        assignment.save flush:true
+        redirect url:"/"
+    }
 }

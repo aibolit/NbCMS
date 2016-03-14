@@ -15,10 +15,11 @@
     <body>
         <div>
             <g:form action="tryLogin" style="padding-left:200px">
-                <label>Email</label>&nbsp;<input type="email" name="email" value="${params.email}" > <br />
-                <label>Password</label>&nbsp;<input type="password" name="password" /> <br />
-                <input type="submit" value="Login"/>
-
+                <fieldset class="form">
+                    <div class="fieldcontain"><label>Email</label>&nbsp;<input type="email" name="email" value="${params.email}" > </div>
+                    <div class="fieldcontain"><label>Password</label>&nbsp;<input type="password" name="password" /> <div /> 
+                    <div class="fieldcontain"> <label></label><input type="submit" value="Login"/></div> 
+                </fieldset>
             </g:form>
         </div>
     </body>
